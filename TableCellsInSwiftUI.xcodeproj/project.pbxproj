@@ -14,6 +14,8 @@
 		FA1F8068282F048400398588 /* TableCellsInSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1F8067282F048400398588 /* TableCellsInSwiftUITests.swift */; };
 		FA1F8072282F048400398588 /* TableCellsInSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1F8071282F048400398588 /* TableCellsInSwiftUIUITests.swift */; };
 		FA1F8074282F048400398588 /* TableCellsInSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1F8073282F048400398588 /* TableCellsInSwiftUIUITestsLaunchTests.swift */; };
+		FA1F8081282F04A100398588 /* TableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1F8080282F04A100398588 /* TableCellView.swift */; };
+		FA1F8085282F13C200398588 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA1F8084282F13C200398588 /* CustomCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		FA1F806D282F048400398588 /* TableCellsInSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableCellsInSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA1F8071282F048400398588 /* TableCellsInSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellsInSwiftUIUITests.swift; sourceTree = "<group>"; };
 		FA1F8073282F048400398588 /* TableCellsInSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellsInSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FA1F8080282F04A100398588 /* TableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellView.swift; sourceTree = "<group>"; };
+		FA1F8084282F13C200398588 /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 				FA1F8058282F048300398588 /* ContentView.swift */,
 				FA1F805A282F048400398588 /* Assets.xcassets */,
 				FA1F805C282F048400398588 /* Preview Content */,
+				FA1F8080282F04A100398588 /* TableCellView.swift */,
+				FA1F8084282F13C200398588 /* CustomCell.xib */,
 			);
 			path = TableCellsInSwiftUI;
 			sourceTree = "<group>";
@@ -231,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA1F8085282F13C200398588 /* CustomCell.xib in Resources */,
 				FA1F805E282F048400398588 /* Preview Assets.xcassets in Resources */,
 				FA1F805B282F048400398588 /* Assets.xcassets in Resources */,
 			);
@@ -257,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA1F8081282F04A100398588 /* TableCellView.swift in Sources */,
 				FA1F8059282F048300398588 /* ContentView.swift in Sources */,
 				FA1F8057282F048300398588 /* TableCellsInSwiftUIApp.swift in Sources */,
 			);
