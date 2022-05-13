@@ -12,39 +12,44 @@
         <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="275" id="bfz-bf-99S" customClass="CustomCell" customModule="TableCellsInSwiftUI" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="275"/>
             <autoresizingMask key="autoresizingMask"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bfz-bf-99S" id="XNx-AC-QA1">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bfz-bf-99S" id="XNx-AC-QA1">
                 <rect key="frame" x="0.0" y="0.0" width="414" height="275"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="asdfasdf" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6YI-Gk-XHX">
-                        <rect key="frame" x="20" y="62" width="374" height="193"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <color key="textColor" systemColor="labelColor"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                    </textView>
-                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rSQ-Ca-MXd">
-                        <rect key="frame" x="20" y="20" width="374" height="34"/>
-                        <attributedString key="attributedText">
-                            <fragment content="abc">
-                                <attributes>
-                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                    <font key="NSFont" metaFont="cellTitle"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="clipping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                </attributes>
-                            </fragment>
-                        </attributedString>
-                        <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardType="URL"/>
-                    </textField>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="URy-oD-tMr">
+                        <rect key="frame" x="20" y="20" width="374" height="240"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rSQ-Ca-MXd">
+                                <rect key="frame" x="0.0" y="0.0" width="374" height="27"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="abc">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" metaFont="cellTitle"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="clipping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardType="URL"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="asdfasdf" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6YI-Gk-XHX">
+                                <rect key="frame" x="0.0" y="40" width="374" height="200"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="240" id="ZPc-85-VOU"/>
+                        </constraints>
+                    </stackView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="rSQ-Ca-MXd" firstAttribute="leading" secondItem="XNx-AC-QA1" secondAttribute="leading" constant="20" symbolic="YES" id="UmU-ZJ-spj"/>
-                    <constraint firstItem="rSQ-Ca-MXd" firstAttribute="top" secondItem="XNx-AC-QA1" secondAttribute="top" constant="20" symbolic="YES" id="XtM-UY-3PD"/>
-                    <constraint firstItem="6YI-Gk-XHX" firstAttribute="top" secondItem="rSQ-Ca-MXd" secondAttribute="bottom" constant="8" id="ZIB-hC-hc2"/>
-                    <constraint firstItem="6YI-Gk-XHX" firstAttribute="leading" secondItem="rSQ-Ca-MXd" secondAttribute="leading" id="mw4-d3-XxG"/>
-                    <constraint firstAttribute="trailing" secondItem="rSQ-Ca-MXd" secondAttribute="trailing" constant="20" symbolic="YES" id="vnv-1e-vtv"/>
-                    <constraint firstItem="6YI-Gk-XHX" firstAttribute="trailing" secondItem="rSQ-Ca-MXd" secondAttribute="trailing" id="yDa-w6-es7"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="6YI-Gk-XHX" secondAttribute="bottom" constant="9" id="yPd-v1-Dhl"/>
+                    <constraint firstAttribute="trailing" secondItem="URy-oD-tMr" secondAttribute="trailing" constant="20" symbolic="YES" id="1ol-bq-82j"/>
+                    <constraint firstItem="URy-oD-tMr" firstAttribute="top" secondItem="XNx-AC-QA1" secondAttribute="top" constant="20" symbolic="YES" id="Kbs-u3-8mS"/>
+                    <constraint firstAttribute="bottom" secondItem="URy-oD-tMr" secondAttribute="bottom" constant="20" symbolic="YES" id="bex-FP-oIZ"/>
+                    <constraint firstItem="URy-oD-tMr" firstAttribute="leading" secondItem="XNx-AC-QA1" secondAttribute="leading" constant="20" symbolic="YES" id="kl3-aS-cfO"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

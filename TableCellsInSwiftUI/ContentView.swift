@@ -24,6 +24,7 @@ struct ContentView: View {
                 .background(Color.yellow)
             ForEach(models, id: \.title) {
                 TableCellView(fieldModel: $0)
+                    //.frame(height: 300)
                     .padding(-8)
                     //.background(Color.yellow)
                     //.background(Color.red)

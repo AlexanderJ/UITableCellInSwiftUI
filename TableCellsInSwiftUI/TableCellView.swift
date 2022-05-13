@@ -17,6 +17,9 @@ struct FieldModel {
 class CustomCell: UITableViewCell {
     @IBOutlet weak var textField: UITextField?
     @IBOutlet weak var textView: UITextView?
+    override var intrinsicContentSize: CGSize {
+        CGSize(width: frame.width, height: 300)
+    }
 }
 
 let nib = UINib(nibName: "CustomCell", bundle: nil)
@@ -47,7 +50,11 @@ struct TableCellView: UIViewRepresentable {
     }
     
     func updateUIView(_ uiView: UITableViewCell, context: Context) {
-        uiView.textLabel?.text = fieldModel.title
-        uiView.detailTextLabel?.text = fieldModel.subtitle
+        if (fieldModel.mode % 5) != 4 {
+            uiView.textLabel?.text = fieldModel.title
+            uiView.detailTextLabel?.text = fieldModel.subtitle
+        }
+        else {
+        }
     }
 }
