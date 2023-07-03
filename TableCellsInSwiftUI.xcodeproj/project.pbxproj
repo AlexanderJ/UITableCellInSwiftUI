@@ -19,6 +19,7 @@
 		FA39FC202A44D23100C1319D /* FormEditField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA39FC1F2A44D23100C1319D /* FormEditField.swift */; };
 		FA39FC222A44E3EA00C1319D /* FormComboBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA39FC212A44E3EA00C1319D /* FormComboBox.swift */; };
 		FA39FC242A44E56200C1319D /* FormMultiComboBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA39FC232A44E56200C1319D /* FormMultiComboBox.swift */; };
+		FAD1392E2A4E1F36000F0C8A /* CustomForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1392D2A4E1F36000F0C8A /* CustomForm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		FA39FC1F2A44D23100C1319D /* FormEditField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormEditField.swift; sourceTree = "<group>"; };
 		FA39FC212A44E3EA00C1319D /* FormComboBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormComboBox.swift; sourceTree = "<group>"; };
 		FA39FC232A44E56200C1319D /* FormMultiComboBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormMultiComboBox.swift; sourceTree = "<group>"; };
+		FAD1392D2A4E1F36000F0C8A /* CustomForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomForm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				FA39FC1F2A44D23100C1319D /* FormEditField.swift */,
 				FA39FC212A44E3EA00C1319D /* FormComboBox.swift */,
 				FA39FC232A44E56200C1319D /* FormMultiComboBox.swift */,
+				FAD1392D2A4E1F36000F0C8A /* CustomForm.swift */,
 			);
 			path = TableCellsInSwiftUI;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				FA1F8081282F04A100398588 /* TableCellView.swift in Sources */,
 				FA1F8059282F048300398588 /* ContentView.swift in Sources */,
 				FA1F8057282F048300398588 /* TableCellsInSwiftUIApp.swift in Sources */,
+				FAD1392E2A4E1F36000F0C8A /* CustomForm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
